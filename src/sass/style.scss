@@ -1,5 +1,6 @@
 @import 'base/variables';
 
+
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
@@ -14,4 +15,10 @@
 @import 'blocks/advantages';
 @import 'blocks/titles';
 @import 'blocks/consultation';
-@import 'blocks/forms'
+@import 'blocks/forms';
+@import 'blocks/carousel';
+
+
+@import 'base/media';
+
+
