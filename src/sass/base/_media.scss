@@ -1,4 +1,7 @@
 @media (max-width: 991px) {
+    .container {
+        max-width: 90vw;
+    }
     .promo {
         padding-bottom: 45px;
     }
@@ -18,11 +21,29 @@
         font-size: 30px;
         }
     }
+    .carousel {
+        .prev, .next {
+            left: -26px;
+        }
+        .next {
+            right: -26px;
+            left: auto;
+        }
+    }
+    .catalog {
+        &-item {
+            width: 270px;
+            &__descr {
+                font-size: 13px;
+            }
+            &__price {
+                font-size: 17px;
+            }
+        }
+    }
 }
 @media (max-width: 767px) {
-    .container {
-        max-width: 90vw;
-    }
+
     .promo {
         min-height: 600px;
         &__link {
@@ -70,6 +91,16 @@
                 margin: 0 5px 15px 5px;
                 border-radius: 100%;
             }
+        }
+    }
+    .catalog {
+        &__content {
+            justify-content: space-around;
+            
+        }
+        &__tab {
+            width: 20vw;
+            font-size: 16px;
         }
     }
 }
@@ -151,6 +182,18 @@
     .feed-form {
         width: 270px;
     }
+    .catalog {
+        padding-bottom: 50px;
+        &__tabs {
+            margin-top: 50px;
+        }
+        &__tab {
+            font-size: 12px;
+        }
+        &__content {
+            margin-top: 45px;
+        }
+    }
 }
 @media (max-width: 320px) {
     .advantages {
@@ -159,6 +202,32 @@
         }
         &__item {
             max-width: 90vw;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        &__tab {
+            width: 50vw;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        &__content {
+            margin-top: 25px;
+        }
+    }
+    .feedback {
+        &__item {
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        &__img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
         }
     }
 }
