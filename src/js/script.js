@@ -59,5 +59,33 @@ $(document).ready(function(){
 	};
 
 	toggleSlide('.catalog-item__link');
-	toggleSlide('.catalog-item__back')
+	toggleSlide('.catalog-item__back');
+
+	//Modal
+
+	$('[data-modal=consultation]').on('click', function() {
+		$('.overlay, #consultation').fadeIn('slow');
+	});
+	$('.modal__close').on('click', function() {
+		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+	});
+	$('.button_mini').each(function(i){
+		$(this).on('click', function(){
+			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+			$('.overlay, #order').fadeIn('slow');
+		});
+	});
+});
+
+$(document).ready(function initMap() {
+    var coordinates = {lat: 55.768738, lng: 37.643155},
+
+        map = new google.maps.Map(document.getElementById('footer__map'), {
+            center: coordinates
+        }),
+    
+        marker = new google.maps.Marker({
+            position: {lat:55.768445, lng: 37.646978},
+            map: map
+        });
 });

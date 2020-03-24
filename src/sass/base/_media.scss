@@ -194,6 +194,19 @@
             margin-top: 45px;
         }
     }
+    .footer {
+        &__info {
+            width: 90vw;
+            padding: 20px;
+        }
+    }
+    .modal {
+        width: 70vw;
+        min-height: 90vw;
+        form{
+            width: 100%;
+        }
+    }
 }
 @media (max-width: 320px) {
     .advantages {
