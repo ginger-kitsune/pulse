@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -113,7 +113,7 @@
             </div>
             <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">Заказать консультацию</button>
@@ -470,7 +470,6 @@
                 <a href="#" class="footer__social-item"><img src="icons/insta.png" alt="instagram"></a>
                 <a href="#" class="footer__social-item"><img src="icons/pint.png" alt="pinterest"></a>
             </div>
-
         </div>
     </footer>
 
@@ -481,7 +480,7 @@
             <div class="modal__descr">и мы перезвоним вам в течение 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" placeholder="Ваше имя" type="text">
-                <input name="phone" placeholder="Ваш телефон" type="number">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">Заказать консультацию</button>
@@ -494,7 +493,7 @@
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" required placeholder="Ваше имя" type="text">
-                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="phone" required placeholder="Ваш телефон">
                 <input name="email" required placeholder="Ваш E-mail" type="email">
 
                 <button class="button button_submit">Купить</button>
@@ -508,6 +507,9 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/circle-up.svg" alt="up">
+    </a>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>   
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -515,6 +517,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGuqE_FAAnK5VyE4_NpntQq5AKUTTE3xQ&callback=initMap"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
